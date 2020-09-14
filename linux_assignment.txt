@@ -1,0 +1,160 @@
+LINUX ASSIGNMENT
+C O N S U L T A D D
+Q U E S T I O N S
+
+1. If we are in the directory X and we are running rmdir X being in that
+directory X. Will this command successfully removes the directory or not.
+ans1) no, well you cannot delete a directory when you are already inside it.
+
+2.What are daemons?
+ans2) Daemons are services that provide several functions that may not be available under the base operating system. Its main task is to listen for service request and at the same time to act on these requests. After the service is done, it is then disconnected and waits for further requests.
+
+3.What are the different modes when using VI editor?
+ans3)there are 3 modes in vi editor which are given below:
+	a)command mode-in this mode,one can view the content and search for any given pattern within the file.
+	b)insert mode-in this mode, one can make changes to the file.
+	c)escape mode-in this mode, one can decide whether to save the changes made or discard them altogether.
+
+4.What is a grep command?
+ans4)GREP stands for Global Regular Expression Print.It is a utility provided to search for a given pattern.
+
+5.What are the contents of /usr/local?
+ans5)it generally consists of files belonging to installed softwares.
+
+6.How cd ~, cd / and cd - are different from each other?
+ans6)  	cd ~ :it takes you to the home of current user
+	cd / :it takes you to the root directory in a linux system
+	cd - :it takes you to the directory you were in before coming to the current directory
+
+7.Which command is used to display the path of the current working
+directory?
+ans7)pwd displays present working directory
+
+8.What is the command to run a program with elevated permissions?
+ans8)sudo <command> -->it gives superuser privileges
+
+9.How to switch to superuser (root) with elevated permissions?
+ans9)sudo su 
+
+10.Which command to switch to the root user?
+ans10) su -  --->you would be prompted to give username/password
+
+11.Which command is used to switch from superuser to normal user?
+ans11) su - <username> 
+
+12.Which command is used to clear the terminal?
+ans12)clear
+
+13.Which command is used to create multiple directories simultaneously?
+ans13) mkdir -p dir1/{subdir1,subdir2,subdir3} --->it will create a parent directory dir1 and three sub-directories which are subdir1,subdir2 & subdir3 
+mkdir dir1 dir2 dir3 ---> creates dir1,dir2 and dir3 in pwd
+
+14.Which command is used to move to parent directory?
+ans14)cd ~ -->is used to move to the home directory of the user
+------------------------------------------------------------------------------
+15.Which command is used to clear the terminal?
+16.Which command is used to create multiple directories simultaneously?
+17.Which command is used to move to parent directory?
+------------------------------------------------------------------------------
+18.Which command is used to display the contents of subdirectories?
+ans18) ls subdir/*
+
+19.Which command is used to display the list of content in reverse order?
+ans19) ls -r
+
+20.Which command is used to display the contents of the parent directory?
+ans20) ls
+
+21.How to remove directory along with subdirectories?
+ans21) rm -rf dir
+
+22. How to move multiple files of the same extension to a different directory?
+ans22) mv *.txt /<path to destination>
+
+23. Which command is used to list the name of files starting from any
+particular alphabet or string?
+ans23) ls|grep <string>
+---------------------------------------------------------------------------------
+24. How to move multiple files of the same extension to a different directory?
+---------------------------------------------------------------------------------
+25. What command is used to change the ownership of a file?
+ans25)chmod ugo filename --->ugo stands for user,group and others and it can take values like 4-read,2-write,1-execute or any combination of them
+
+26. How to delete a directory forcefully?
+ans26)rm -rf dir
+
+27. How to forcefully stop a process which is running in the background?
+ans27)kill pid 
+
+28. Which command is used to display the current username?
+ans28)whoami
+
+29. How to determine the type of a file?
+ans29) file <filename/directoryname>
+
+30. Which command is used to create a new empty file?
+ans30) touch filename
+
+31. Which command is used to display all the file names along with their types
+of the current directory?
+ans31) ls -l 
+
+32. Which command is used to display all the file names along with their
+types of different directory?
+ans32) ls -l directory/
+
+33. How to delete a directory recursively i.e. it asks before the deletion on
+subdirectories?
+ans33) rmdir directoryname
+
+34. Which command shows the users that are logged in?
+ans34) w
+
+35. Which command is used to rename the file?
+ans35) mv oldfilename newfilename
+
+36. What is the difference between mv and rename?
+ans36) mv command is used for renaming files/directories
+
+37. Which command is used to change the permissions of a file?
+ans37) chmod
+
+38. What command is used to show how long it's been since the server was
+rebooted?
+ans38) uptime
+
+39. What command is used to get the IP addresses of all interfaces on a
+server? 
+ans39) ifconfig
+
+40. What command is used to change your password?
+ans40) passwd
+
+41. What command is used to check whether manual page exists or not ?
+Also where it exists?
+ans41)check in /usr/share/man
+
+42. How these commands would be working try and explain (files contain
+“hello” word) :
+grep -v -i hello file1.txt ---> it will print the cotent of the file2.txt except for the word hello in any case(uppercase/lowercase)
+grep -i hello file2.txt --->it will print all the lines in which hello word comes in any case(uppercase/lowercase) in the file2.txt 
+grep -A 2 hello file2.txt --->it will print the line in which hello word comes and also two lines after that from the file2.txt
+grep -C 4 hello file1.txt --->it will print only the first four lines in which the hello word has appeared in the file1.txt
+grep -B 3 hello file1.txt --->it will print the line in which hello word comes and also three lines before that from the file1.txt
+ps -ef | more ---> shows the processes running one page at a time
+awk '{print $2,$5;}' employee.txt --->it prints 2nd and 5th word of each line in the file named employee.txt
+
+43. Practice the following commands:
+shutdown
+diff
+sort
+ps
+kill
+mount
+nano 
+
+44. How to find where a file is located in Linux? 
+ans44) locate filename
+
+45. What does echo command do?
+ans45) prints the output to the console
